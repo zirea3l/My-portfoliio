@@ -15,45 +15,36 @@ const loadNow = (opacity) => {
 const displayContent = () => {
     loader.style.display = "none";
     document.getElementById("wrapper").style.display = "block";
-}
-
-;
+};
 document.addEventListener("DOMContentLoaded", () => {
-        loader = document.getElementById("loader");
-        loadNow(1);
-    }
-
-);
+    loader = document.getElementById("loader");
+    loadNow(1);
+});
 //navbar
 const navSlide = () => {
     const burger = document.querySelector(".burger");
     const nav = document.querySelector(".nav-links");
     const navLinks = document.querySelectorAll(".nav-links li");
+
     burger.addEventListener("click", () => {
         nav.classList.toggle("nav-active");
+
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = "";
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards $ {
                     index / 7 + 0.5
-                }
-                s`;
+                }s`;
             }
         });
         burger.classList.toggle("toggle");
     });
-}
-
-;
+};
 navSlide();
 //typewriter
 const textDisplay = document.getElementById("text");
-const phrases = ["Tech Architect",
-    "Technical Writer",
-    "Web Developer",
-    "Casual Gamer"
-];
+const phrases = ["Tech Architect", "Technical Writer", "Web Developer", "Casual Gamer"];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
@@ -100,9 +91,7 @@ const faders = document.querySelectorAll(".fade-in");
 const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -250px 0px",
-}
-
-;
+};
 //observer
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
         entries.forEach((entry) => {
@@ -113,14 +102,11 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
                 appearOnScroll.unobserve(entry.target);
             }
         });
-    }
-
-    , appearOptions);
+    },
+    appearOptions);
 faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-    }
-
-);
+    appearOnScroll.observe(fader);
+});
 //hidden
 // const hide = () => {
 //   document.getElementById("title").textContent = "Read it on DEV";
