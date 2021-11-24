@@ -14,7 +14,7 @@
     position: fixed;
     z-index: 10;
     overflow: visible;
-    background: #181818 url("../images/logo.gif") no-repeat center center;
+    background: #181818 url("../image/logo.gif") no-repeat center center;
 }
 
 body a {
