@@ -266,14 +266,14 @@ h3 {
     color: white;
 }
 
-.discord:hover {
-    background-color: #a020f0;
+.in:hover {
+    background-color: #0a66c2;
     cursor: pointer;
     color: white;
 }
 
-.in:hover {
-    background-color: #0a66c2;
+.discord:hover {
+    background-color: #a020f0;
     cursor: pointer;
     color: white;
 }
@@ -740,6 +740,10 @@ h3 {
 
 .git-link:hover {
     color: #46954a;
+}
+
+.disc-link:hover {
+    color: #a020f0;
 }
 
 .end {
