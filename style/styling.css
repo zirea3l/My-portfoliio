@@ -44,7 +44,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #6d6d6d;
+    background-color: #202020;
     position: relative;
     z-index: 5;
 }
@@ -124,7 +124,7 @@ nav {
         transition: 0.3s ease-in;
     }
     .nav-links li {
-        opacity: 0;
+        opacity: 1;
         margin: 20px 30px;
     }
     .burger {
