@@ -44,7 +44,7 @@ const navSlide = () => {
 navSlide();
 //typewriter
 const textDisplay = document.getElementById("text");
-const phrases = ["Tech Architect", "Technical Writer", "Web Developer", "Casual Gamer"];
+const phrases = ["Technical Writer", "Web Developer", "Casual Gamer"];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
